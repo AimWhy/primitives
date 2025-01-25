@@ -1,6 +1,6 @@
 {
   "name": "@radix-ui/react-navigation-menu",
-  "version": "1.2.3",
+  "version": "1.2.5-rc.1",
   "license": "MIT",
   "exports": {
     ".": {
@@ -43,6 +43,14 @@
     "@radix-ui/react-use-previous": "workspace:*",
     "@radix-ui/react-visually-hidden": "workspace:*"
   },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
   "peerDependencies": {
     "@types/react": "*",
     "@types/react-dom": "*",
@@ -64,5 +72,6 @@
   },
   "bugs": {
     "url": "https://github.com/radix-ui/primitives/issues"
-  }
+  },
+  "stableVersion": "1.2.4"
 }

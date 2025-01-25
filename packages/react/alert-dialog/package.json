@@ -1,6 +1,6 @@
 {
   "name": "@radix-ui/react-alert-dialog",
-  "version": "1.1.4",
+  "version": "1.1.6-rc.1",
   "license": "MIT",
   "exports": {
     ".": {
@@ -35,6 +35,14 @@
     "@radix-ui/react-primitive": "workspace:*",
     "@radix-ui/react-slot": "workspace:*"
   },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
   "peerDependencies": {
     "@types/react": "*",
     "@types/react-dom": "*",
@@ -56,5 +64,6 @@
   },
   "bugs": {
     "url": "https://github.com/radix-ui/primitives/issues"
-  }
+  },
+  "stableVersion": "1.1.5"
 }

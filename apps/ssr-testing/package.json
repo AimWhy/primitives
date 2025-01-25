@@ -1,5 +1,5 @@
 {
-  "name": "ssr-testing",
+  "name": "@repo/ssr-testing",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,8 +13,9 @@
     "react-dom": "19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
-    "typescript": "^5.7.2"
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "typescript": "^5.7.3"
   }
 }

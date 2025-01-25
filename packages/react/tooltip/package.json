@@ -1,6 +1,6 @@
 {
   "name": "@radix-ui/react-tooltip",
-  "version": "1.1.6",
+  "version": "1.1.8-rc.1",
   "license": "MIT",
   "exports": {
     ".": {
@@ -41,6 +41,14 @@
     "@radix-ui/react-use-controllable-state": "workspace:*",
     "@radix-ui/react-visually-hidden": "workspace:*"
   },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
   "peerDependencies": {
     "@types/react": "*",
     "@types/react-dom": "*",
@@ -62,5 +70,6 @@
   },
   "bugs": {
     "url": "https://github.com/radix-ui/primitives/issues"
-  }
+  },
+  "stableVersion": "1.1.7"
 }
