@@ -1,6 +1,6 @@
 {
   "name": "radix-ui",
-  "version": "1.2.0-rc.0",
+  "version": "1.2.0-rc.1",
   "license": "MIT",
   "source": "./src/index.ts",
   "main": "./dist/index.js",
@@ -18,27 +18,30 @@
       }
     },
     "./*": {
-      "require": {
-        "types": "./dist/cjs/*.d.ts",
-        "default": "./dist/cjs/*.js"
-      },
       "import": {
-        "types": "./dist/esm/*.d.ts",
-        "default": "./dist/esm/*.js"
+        "types": "./dist/*.d.mts",
+        "default": "./dist/*.mjs"
+      },
+      "require": {
+        "types": "./dist/*.d.ts",
+        "default": "./dist/*.js"
       }
     }
   },
   "files": [
     "dist",
+    "src",
     "README.md"
   ],
   "sideEffects": false,
   "scripts": {
+    "lint": "eslint --max-warnings 0 src",
     "clean": "rm -rf dist",
     "version": "yarn version",
     "build": "tsc ."
   },
   "dependencies": {
+    "@radix-ui/primitive": "workspace:*",
     "@radix-ui/react-accessible-icon": "workspace:*",
     "@radix-ui/react-accordion": "workspace:*",
     "@radix-ui/react-alert-dialog": "workspace:*",
@@ -89,6 +92,16 @@
     "@radix-ui/react-use-size": "workspace:*",
     "@radix-ui/react-visually-hidden": "workspace:*"
   },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9.18.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
   "peerDependencies": {
     "@types/react": "*",
     "@types/react-dom": "*",
@@ -110,5 +123,6 @@
   },
   "bugs": {
     "url": "https://github.com/radix-ui/primitives/issues"
-  }
+  },
+  "stableVersion": "1.1.3"
 }
